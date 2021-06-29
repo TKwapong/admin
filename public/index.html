@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin APP</title>
+
+    <link rel="stylesheet" href="stylesheets.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  </head>
+  <body>
+     <!-- Form-->
+     <div class="form">
+      <div class="form-toggle"></div>
+      <div class="form-panel one">
+        <div class="form-header">
+          <h1>ADMIN APP</h1>
+        </div>
+        <div id="login_div" class="form-content">
+          <form>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" required="required"/>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required="required"/>
+            </div>
+            <div class="form-group">
+              <label class="form-remember">
+                <input type="checkbox"/>Remember Me
+              </label><a class="form-recovery" href="#">Forgot Password?</a>
+            </div>
+            <div class="form-group">
+              <button onclick="login()" type="submit" id="login-button">LOGIN</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- <div id="user_div" class="card">
+          <label>Search for Student:</label>
+          <div class="d-flex">
+            <input type="text" placeholder="Student ID" />
+            <button type="button">Search</button>
+          </div>
+    
+          <div class="card-body">
+            
+          </div>
+        </div> -->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script> -->
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!-- script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script> -->
+    <!-- include only the Firebase features as you need -->
+    <!-- <script  src="/__/firebase/8.6.8/firebase-auth.js"></script>
+    <script  src="/__/firebase/8.6.8/firebase-database.js"></script>
+    <script  src="/__/firebase/8.6.8/firebase-firestore.js"></script>
+    <script  src="/__/firebase/8.6.8/firebase-functions.js"></script>
+    <script  src="/__/firebase/8.6.8/firebase-messaging.js"></script>
+    <script  src="/__/firebase/8.6.8/firebase-storage.js"></script>
+    <script  src="/__/firebase/8.6.8/firebase-remote-config.js"></script>
+    <script  src="/__/firebase/8.6.8/firebase-performance.js"></script> -->
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <!-- script  src="/__/firebase/init.js"></script> -->
+    <script src="script.js"></script>
+    <!-- <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyCfM-EsMMRA4bL-PSv-tT7XL3w1ajcrcuQ",
+        authDomain: "userapplication-4369d.firebaseapp.com",
+        databaseURL: "https://userapplication-4369d-default-rtdb.firebaseio.com",
+        projectId: "userapplication-4369d",
+        storageBucket: "userapplication-4369d.appspot.com",
+        messagingSenderId: "630061711045",
+        appId: "1:630061711045:web:74a6230996fecb3cb3faac",
+        measurementId: "G-2RF66MZ1KL"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+</script> -->
+  </body>
+</html>
